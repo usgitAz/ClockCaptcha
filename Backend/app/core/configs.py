@@ -9,5 +9,13 @@ class Settings(BaseSettings):
     debug: bool = Field(
         default=False, description="debug mode, change to False for production!")
 
+    # logging
+    log_level_console: str = Field(
+        default="DEBUG", description="log level for showing logs in console.")
+    log_level_default: str = Field(
+        default="DEBUG", description="log level for default logger")
+    log_level_uvicorn: str = Field(
+        default="DEBUG", description="log level for Uvicorn")
+
 
 settings = Settings()
