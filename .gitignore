@@ -82,6 +82,8 @@ Desktop.ini
 # Local environment files
 .env
 .env.*
+#dont ignore .env.example file 
+!.env.example
 *.envrc
 
 # Database files
